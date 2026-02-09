@@ -1,11 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Gimcar Automotores</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gimcar Automotores | Nuevos y Usados</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #0fdfe0 0%, #020617 55%, #020024 100%);
+      color: #ffffff;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+    header img {
+      width: 150px;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 0 15px rgba(15,223,224,0.6));
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 3px;
+    }
+    header p {
+      color: #7ffcff;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0fdfe0;
+      text-align: center;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: linear-gradient(180deg, #020b1e, #020617);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 0 30px rgba(15,223,224,0.15);
+      border: 1px solid rgba(15,223,224,0.25);
+    }
+    .card h3 {
+      color: #0fdfe0;
+      margin-top: 0;
+    }
+    .card strong {
+      color: #7ffcff;
+    }
+    .cta {
+      background: linear-gradient(135deg, #0fdfe0, #28e5e5);
+      color: #020617;
+      text-align: center;
+      padding: 55px 20px;
+      border-radius: 30px;
+      margin: 50px 20px;
+      box-shadow: 0 0 40px rgba(15,223,224,0.5);
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 22px;
+      background: #020617;
+      color: #ffffff;
+      padding: 16px 34px;
+      border-radius: 35px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 0.9rem;
+      color: #7ffcff;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align:center;">
+<body>
+
+<header>
+  <img src="logo-gimcar.png" alt="Gimcar Automotores" />
   <h1>GIMCAR AUTOMOTORES</h1>
-  <p>La web está funcionando correctamente</p>
+  <p>Vehículos nuevos y usados · Financiación a tu medida</p>
+</header>
+
+<section>
+  <h2>Motos disponibles</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="img/moto1.jpg" alt="Moto deportiva roja" style="width:100%; border-radius:18px; margin-bottom:15px;">
+      <h3>Honda CB TWISTER 2024</h3>
+      <p>Moto en excelente estado, lista para transferir.</p>
+      <p><strong>Precio: $8.900.000</strong></p>
+      <a href="https://wa.me/5492617178128" style="color:#0fdfe0; text-decoration:none;">Consultar por WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="img/moto2.jpg" alt="Moto frente al local Gimcar" style="width:100%; border-radius:18px; margin-bottom:15px;">
+      <h3>Honda CB Touring</h3>
+      <p>Ideal para ciudad y ruta. Financiación disponible.</p>
+      <p><strong>Consultar precio</strong></p>
+      <a href="https://wa.me/5492617178128" style="color:#0fdfe0; text-decoration:none;">Consultar por WhatsApp</a>
+    </div>
+    <div class="card">
+      <img src="img/moto3.jpg" alt="Moto vista lateral" style="width:100%; border-radius:18px; margin-bottom:15px;">
+      <h3>Honda CB Adventure</h3>
+      <p>Diseño deportivo y máximo confort.</p>
+      <p><strong>Consultar precio</strong></p>
+      <a href="https://wa.me/5492617178128" style="color:#0fdfe0; text-decoration:none;">Consultar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>¿Por qué elegirnos?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Autos Nuevos</h3>
+      <p>Trabajamos con las mejores marcas del mercado para que estrenes tu próximo vehículo con total tranquilidad.</p>
+    </div>
+    <div class="card">
+      <h3>Autos Usados</h3>
+      <p>Unidades seleccionadas, revisadas y listas para transferir. Calidad y confianza garantizada.</p>
+    </div>
+    <div class="card">
+      <h3>Financiación</h3>
+      <p>Planes flexibles, cuotas fijas y en pesos. Nos adaptamos a tu presupuesto.</p>
+    </div>
+    <div class="card">
+      <h3>Gestión Integral</h3>
+      <p>Nos ocupamos de todo el proceso: papeles, transferencia y asesoramiento personalizado.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Web oficial Gimcar Automotores</h2>
+  <p>Atención personalizada · Nuevos y usados · Financiación inmediata</p>
+  <a href="https://wa.me/5492617178128" target="_blank">Consultar por WhatsApp</a>
+</div>
+
+<section>
+  <h2>Contacto</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Dirección</h3>
+      <p>Av. Bandera de los Andes 2121<br>Guaymallén, Mendoza</p>
+    </div>
+    <div class="card">
+      <h3>WhatsApp</h3>
+      <p>Respondemos rápido para asesorarte y cotizar tu próximo vehículo.</p>
+    </div>
+    <div class="card">
+      <h3>Horario</h3>
+      <p>Lunes a Viernes<br>9:00 a 18:00 hs</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © Gimcar Automotores · Todos los derechos reservados
+</footer>
+
+<a href="https://wa.me/5492617178128" class="whatsapp-float" target="_blank">💬</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  background-color: #20b858;
+}
+</style>
+
 </body>
 </html>
